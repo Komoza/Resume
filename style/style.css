@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif
+}
+
+main{
+    min-height: 110vh;
+    min-width: 0;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.container{
+    height: 80vh;
+    width: 60%;
+    min-width: 350px;
+    min-height: 700px;
+    border-radius: 2rem;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255,255,255, .7),
+        rgba(255,255,255, .3)
+    );
+    backdrop-filter: blur(2rem);
+    z-index: 2;
+    display: flex;
+
+    
+}
+.circles{
+    width: 20rem;
+    height: 20rem;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255,255,255, .9),
+        rgba(255,255,255, .1)
+    );
+    border-radius: 50%;
+    position: absolute;
+    
+    
+
+}
+.circle1{
+    top: 5%;
+    right: 15%;
+}
+
+.circle2{
+    bottom: 5%;
+    left: 10%;
+}
+
+.panel{
+    min-width: 350px;
+    height: 100%;
+    border-radius: 2rem;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255,255,255, .7),
+        rgba(255,255,255, .3)
+    );
+    text-align: center;
+}
+.photo{
+    max-width: 10rem;
+    max-height: 10rem;
+    margin: 10% auto 5%;
+    border-radius: 50%;
+    border: .1rem solid white;
+    box-shadow: 0 0 10px rgba(26, 9, 9, .4);
+}
+.name{
+    color: #426696;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.age{
+   color: #658ec6;
+   font-weight: 500;
+   opacity: 0.8;
+}
+
+.skills{
+    margin: 15% 15% 15%;
+    text-align: left;
+}
+
+.bigText{
+    color: #426696;
+    font-weight: 600;
+    font-size: 1.2rem; 
+    margin-bottom: 1.5rem; 
+}
+.smallText{
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+    font-size: 1rem; 
+}
+.contactParagraph{
+    color: #426696;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.contactMe img{
+    margin: 10px;
+    border-radius: 50%;
+    max-width: 40px;
+    max-height: 40px;
+    object-fit: cover;
+}
+.programingLang{
+    padding: 7%;
+    width: 100vh;
+    height: 100vh;
+    text-align: left;
+}
+.programingLang h2{
+    margin-top: 5%;
+    color: #426696;
+    font-weight: 700;
+    font-size: 1.9rem; 
+    margin-bottom: 5rem;  
+}
+.card{
+    margin: 5% auto 5%;
+    width: 100%;
+    height: 100px;
+    min-width: 30%;
+    min-height: 14%;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, .212);
+    display: flex;
+    align-items: center;
+}
+
+.card p{
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+    font-size: 1rem; 
+}
+.card img{
+    max-width: 65px;
+    max-height: 65px;
+    margin: 40px;
+}
+.created{
+    color: #658ec6;
+    font-weight: 500;
+    font-size: 1rem;
+    right: 2%;
+    bottom: 2%; 
+    position: absolute;
+}
+.contentPL{
+    width: 100%;
+    height: 70%;
+}
+.contentPL p{
+    margin-top: 3%;
+}
+.progressBar{
+    margin-top: 2%;
+    width: 100%;
+    height: 25%;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.htmlProgress::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 31%;
+}
+.cssProgress::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 17%;
+}
+.jsProgress::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 4%;
+}
+.procent{
+    color: #65dfc9;
+    font-weight: 500;
+    padding-top: 4%;
+    margin-left: 10%;
+    width: 100px;
+    height: 100%;
+}
+
+@media screen and (min-height: 750px) and (min-width: 1300px){
+    body{
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .programingLang{
+       visibility: hidden;
+       position: absolute;
+       width: 0;
+    }
+    .panel{
+        width: 100%;
+        min-width: 0;
+        height: 100%;
+        min-height: 0;
+    }
+    .container{
+        height: 100%;
+        min-height: 0;
+        position: absolute;
+    }
+    .skills{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .panel{
+        max-width: 0;
+    }
+    .container{
+        max-width: 0;
+    }
+}
+
